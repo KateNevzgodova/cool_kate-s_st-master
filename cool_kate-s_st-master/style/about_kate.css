@@ -1,0 +1,117 @@
+@media(max-width:754px) {
+    .rightSide .two-columns .box1 {
+        width: 100%;
+    }
+    .rightSide .two-columns {
+        flex-direction: column;
+    }
+    .box1 span,
+    .box1 .text1 {
+        line-height: 25px !important;
+    }
+}
+
+@media(max-width:660px) {
+    .blockImag #imag1 {
+        width: 291px;
+        height: 503px;
+        border-radius: 18px;
+        float: left;
+        /* object-fit: cover; */
+    }
+}
+
+@media(max-width:579px) {
+    .about-main .container_main {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-main .rightSide {
+        margin-left: 0;
+    }
+    .blockImag #imag1 {
+        width: 100%;
+    }
+}
+
+.about-main .container_main {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-main .container_main article {
+    width: auto;
+    padding: 0;
+}
+
+.container_main .blockImag {
+    border-radius: 15px;
+}
+
+#imag1 {
+    width: 355px;
+    height: 503px;
+    border-radius: 15px;
+    float: left;
+    object-fit: cover;
+}
+
+.rightSide {
+    width: 100%;
+    font-family: Amita;
+    color: white;
+    float: right;
+    margin-left: 38px;
+    height: fit-content;
+    background: none;
+}
+
+.box1 {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 27px;
+}
+
+.box1 span {
+    font-family: Amita;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    color: #FDFDFD;
+    position: relative;
+}
+
+.box1 span::before {
+    content: '';
+    background-color: #FBFF34;
+    border-radius: 7px;
+    width: 100%;
+    /* top: 1px; */
+    margin-top: 2px;
+    height: 6px;
+    position: absolute;
+    bottom: 1px;
+}
+
+.box1 .text1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    color: #FFFCFC;
+    margin-top: 10px;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-columns .box1 {
+    width: calc(50% - 14px);
+}

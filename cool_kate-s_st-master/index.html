@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cool Kate's Stories</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+</head>
+
+<body>
+    
+    <div class="background">
+
+        <header>
+            <div class="container">
+                <h1 class="title"> Cool Kate's Stories</h1>
+                <a href="pages\sign_in.html" class="sign-in"> Sign In</a>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <a href="#" class="menu">Stories</a> <a href="#" class="menu">Original</a><a href="#" class="menu">Fanfics</a><a href="pages\about_kate.html" class="menu">About Kate</a>
+            </div>
+        </nav>
+
+        <form id="search" onsubmit="onSerch(event);">
+            <div class="container">
+                <input name="search" type="search" placeholder="search">
+
+            </div>
+        </form>
+        <main>
+            <div class="container" id="main_articles">
+
+            </div>
+        </main>
+
+        <section>
+            <div class="container" id="random_story_container">
+
+              <!-- <div class="title">
+                    <h2>A New Random Story:</h2>
+                    <a class="link" href="#">Moments, Just Moments</a>
+                </div>
+                <div class='story_body'>
+                <div class="detail">
+                    <div class="like">
+                        <img src="img/pulse.svg" alt="like" class="heart_like">
+                        <span id="like">number of your likes</span>
+                        <img src="img\broken-heart.svg" alt="dislike" class="dislike">
+                    </div>
+                    <div class="description">
+                        <span>Fandom: Exo</span>
+                        <span>Warnings: OOC</span>
+                        <br>
+                        <span>Discription:</span>
+                        <p>This is not their whole story. These are moments, just moments of their life ...</p>
+                    </div>
+                </div> -->
+            </div>
+            </div> 
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="rules">
+                    <a href="#">Support</a>
+                    <a href="#">News</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Rules</a>
+                </div>
+                <div>
+                    <a href="#" class="media"><img src="img\facebook.png" alt="facebook"></a>
+                    <a href="#" class="media"><img src="img\instagram.svg" alt="instagram"></a>
+                    <a href="#" class="media"><img src="img\twitter.png" alt="twitter"></a>
+                </div>
+                <div>
+                    <span class="sub">&copy;<a href="#">Cool Kate's Stories,</a> 2021</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="script_random_story.js"></script>
+    
+</body>
+
+</html>

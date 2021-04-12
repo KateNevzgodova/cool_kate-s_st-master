@@ -1,0 +1,137 @@
+.background .sign-container {
+    padding: 18px 20px;
+    display: flex;
+    background-color: #9f7754d1;
+    border-radius: 15px;
+    font-family: Roboto;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container-sign {
+    padding-bottom: 20px;
+}
+
+.sign-container .title h2 {
+    font-size: 30px;
+    float: left;
+    font-family: Amita;
+    color: white;
+}
+
+.sign-container .input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form .login {
+    margin: 20px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto;
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140.7%;
+    outline-offset: -2px;
+}
+
+.password {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140.7%;
+    margin: 20px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto;
+    width: 100%;
+    outline-offset: -2px;
+}
+
+.checkboxs {
+    margin: 10px 8px;
+}
+
+.forgot {
+    text-decoration: none;
+    color: black;
+    padding-left: 28px;
+    letter-spacing: 0.2px;
+}
+
+label {
+    letter-spacing: 0.2px;
+    color: black;
+    padding-left: 5px;
+}
+
+button {
+    width: 45%;
+    color: #f4f3f3;
+    font-family: 'Amita';
+    font-size: 14px;
+    border-radius: 15px;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: -webkit-fill-available;
+    font-weight: bold;
+    background-color: #6542328a;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    margin: 17px;
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.or::before {
+    content: '';
+    background-color: white;
+    border-radius: 7px;
+    width: 49%;
+    height: 4px;
+    position: absolute;
+    bottom: 6px;
+    left: -13px;
+}
+
+.or::after {
+    content: '';
+    background-color: white;
+    border-radius: 7px;
+    width: 49%;
+    height: 4px;
+    position: absolute;
+    bottom: 6px;
+    right: -13px;
+}
+
+.register a {
+    font-family: 'Amita';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140.7%;
+    display: flex;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+footer .container {
+    margin: auto;
+}
