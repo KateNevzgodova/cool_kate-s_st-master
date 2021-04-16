@@ -3,7 +3,8 @@ const dataRandomStories = {
     fandom: 'Fandom: EXO',
     type: 'Warnings: OOC',
     discription: 'This is not their whole story. These are moments, just moments of their life ...',
-    likes: 1300 
+    likes: 100,
+    dislikes: 50
 }
 
 
@@ -25,18 +26,28 @@ const drawRandomStory = (e) => {
             link.href='#';
             link.className = 'link';
             link.innerText = dataRandomStories.name;
+
+            
             const divDetail = document.createElement('div');
             divDetail.className = 'like';
+            const buttonLike = document.createElement('button');
+            buttonLike.className = 'buttonLike'
             const imgLike = document.createElement('img');
             imgLike.src = 'img/pulse.svg';
             imgLike.className = 'heart_like';
-             imgLike.alt = 'like';
+            imgLike.alt = 'like';
             const spanLikes = document.createElement('span');
             spanLikes.id = 'like';
             spanLikes.innerText = dataRandomStories.likes;
+            
+            const buttonDislike = document.createElement('button');
+            buttonDislike.className = 'buttonDislike';
             const imgDislike = document.createElement('img');
             imgDislike.className = 'dislike';
             imgDislike.src = 'img/broken-heart.svg';
+            const spanDisLikes = document.createElement('span');
+            spanDisLikes.id = 'spanDisLikes';
+            spanDisLikes.innerText = dataRandomStories.dislikes;
             const divDescription = document.createElement('div');
             divDescription.className = 'description';
             const spanFandom = document.createElement('span');
@@ -45,26 +56,56 @@ const drawRandomStory = (e) => {
             spanWarnings.innerText = dataRandomStories.type;
             const spanDiscription = document.createElement('span');
             spanDiscription.innerText = 'Discription:';
+            spanDiscription.className = 'discription';
             const p = document.createElement('p');
             p.innerText = dataRandomStories.discription;
             divTitle.appendChild(h2);
-            
             divTitle.appendChild(link);
             divDescription.appendChild(spanFandom);
             divDescription.appendChild(spanWarnings);
             divDescription.appendChild(spanDiscription);
             divDescription.appendChild(p);
-            divDetail.appendChild(imgLike)
+            divDetail.appendChild(buttonLike);
+            buttonLike.appendChild(imgLike);
             divDetail.appendChild(spanLikes);
-            divDetail.appendChild(imgDislike);
+            divDetail.appendChild(buttonDislike);
+            buttonDislike.appendChild(imgDislike);
+            divDetail.appendChild(spanDisLikes);
             div.appendChild(divTitle);
             div.appendChild(divStoryBody);
-            
             divStoryBody.appendChild(divDetail);
             divStoryBody.appendChild(divDescription);
             newSection.appendChild(div);
             container.appendChild(newSection);
     }
+    let heart = document.querySelector('.buttonLike');
+            let likesNumber = document.querySelector('#like');
+            let counter = 100;
+            heart.onclick = function() {
+            if (heart.classList.contains('added')) {
+            counter-=1;
+            document.querySelector('.buttonDislike').disabled = false;
+            } else {
+            counter+=1;
+            document.querySelector('.buttonDislike').disabled = true;
+            }
+            likesNumber.textContent = counter;
+            heart.classList.toggle('added');
+            }
+    let brokenHeart = document.querySelector('.buttonDislike');
+            let dislikesNumber = document.querySelector('#spanDisLikes');
+            let counterDislikes = 50;
+            brokenHeart.onclick = function func() {
+            if (brokenHeart.classList.contains('added')) {
+            counterDislikes-=1;
+            document.querySelector('.buttonLike').disabled = false;
+            } else {
+            counterDislikes+=1;
+            document.querySelector('.buttonLike').disabled = true;
+            }
+            dislikesNumber.textContent = counterDislikes;
+            brokenHeart.classList.toggle('added');
+            }
 }
 
 

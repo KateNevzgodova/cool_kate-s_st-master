@@ -95,13 +95,25 @@
         width: 55px;
     }
     .like .dislike{
-        width: 55px;
+        width: 52px;
     }
     .description{
     padding-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    }
+    .like .buttonLike{
+    width: 102%;
+    }
+    .like .buttonDislike{
+    width: 102%;
+    }
+    #like{
+        font-size: 25px;
+    }
+    #spanDisLikes{
+        font-size: 25px;
     }
 }
 
@@ -280,7 +292,7 @@ section .container>.title {
 .link {
     text-decoration: none;
     color: white;
-    padding-left: 20px;
+    padding-left: 30px;
     font-size: 30px;
 }
 
@@ -304,32 +316,55 @@ section .container>.title {
     display: flex;
     flex-direction: column;
     position: relative;
+    
+}
+.buttonLike{
+    border-radius: 30px;
+    width: 17%;
+    display: flex;
+    margin: auto;
+    background-color: black;
 }
 .heart_like{
-    width: 20%;
+    width: 97%;
     object-fit: cover;
     margin: auto;
+    cursor: pointer;
+}
+.buttonDislike{
+    border-radius: 30px;
+    width: 17%;
+    display: flex;
+    margin: auto;
+    background-color: black;
 }
 .dislike{
-    width: 16%;
+    width: 85%;
+    padding-top: 3px;
     margin: auto;
     object-fit: cover;
+    cursor: pointer;
+}
+#spanDisLikes{
+    text-align: center;
 }
 #like{
     text-align: center;
 }
 .description {
-    padding-left: 26px;
-    font-size: 19px;
+    /* padding-left: 26px; */
+    font-size: 20px;
 }
 
 .description>span {
     padding: 0px 11px;
     display: inline-block;
 }
-
+.description .discription{
+    display: flex;
+}
 .description p {
-    padding: 0px 20px;
+    padding: 4px 20px;
 }
 
 .description span:before {
