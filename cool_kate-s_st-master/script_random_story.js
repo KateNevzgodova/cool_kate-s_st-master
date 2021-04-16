@@ -110,3 +110,4 @@ const drawRandomStory = (e) => {
 
 
 document.getElementById('random_story_container').addEventListener("load", drawRandomStory() )
+// не хочет коммит
